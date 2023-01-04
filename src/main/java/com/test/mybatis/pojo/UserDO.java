@@ -60,4 +60,15 @@ public class UserDO {
     public void setBirthday(Date birthday) {
         this.birthday = birthday;
     }
+
+    @Override
+    public String toString() {
+        return "UserDO{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", age=" + age +
+                ", hobbies='" + hobbies + '\'' +
+                ", birthday=" + birthday +
+                '}';
+    }
 }
