@@ -65,3 +65,9 @@ INSERT INTO `mybatis_test`.`user` (`id`, `name`, `age`, `hobbies`, `birthday`) V
 1. 为每个mapper文件写一个同名的接口，mapper文件的命名空间写入同名接口的项目地址
 2. 同名方法的接口名为对应mapper文件sql的id
 3. 在测试方法中，获取到sqlSession后，通过其getMapper方法，传入Mapper的class，即可获取到mybatis动态代理生成的实体对象
+
+## 四、Mybatis技术内幕
+
+### （1）Mybatis整体架构
+
+![](D:\MyStudy\mybatis-test\nodePictures\Mybatis.png)
