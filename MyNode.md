@@ -46,10 +46,16 @@ INSERT INTO `mybatis_test`.`user` (`id`, `name`, `age`, `hobbies`, `birthday`) V
 
 ## 三、Mybatis连接数据库
 
-### （1）mybatis的使用（基本流程）
+### （1）mybatis的使用（基本流程，不含动态代理）
 
 1. 配置一个mybatis配置文件（sqlMapConfig.xml），其中确定了连接类型（JDBC），连接驱动，url，username，password
 2. mybatis配置文件可关联一些mapper文件，mapper文件中配置了该mapper的命名空间（namespace），sql语句，入参出参类型
 3. 将mybatis配置文件里的信息收集到inputStream中，通过SqlSessionFactoryBuilder（建造者模式）获取inputStream中的数据封装成sqlSessionFactory
 4. 通过sqlSessionFactory获取sqlSession
 5. 使用sqlSession执行某命名空间中的sql语句，直接获取到出参类型（UserDO）的实体对象
+
+### （2）mybatis的DAO开发
+
+1. 对每个mapper文件写一个接口
+2. mapper文件中的一个sql对应接口中的一个方法
+3. 写接口实现类，在接口的实现类中，需要注入SqlSessionFactory，使用SqlSessionFactory的openSession方法获取sqlSession来完成每个接口方法
