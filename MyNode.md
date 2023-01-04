@@ -44,9 +44,9 @@ INSERT INTO `mybatis_test`.`user` (`id`, `name`, `age`, `hobbies`, `birthday`) V
 7. 通过结果集可获取数据库数据（getString()方法）
 8. 关闭resultSet，statement，connection（与打开顺序相反）
 
-## 三、Mybatis连接数据库
+## 三、Mybatis的使用
 
-### （1）mybatis的使用（基本流程，不含动态代理）
+### （1）mybatis基本流程，不含动态代理
 
 1. 配置一个mybatis配置文件（sqlMapConfig.xml），其中确定了连接类型（JDBC），连接驱动，url，username，password
 2. mybatis配置文件可关联一些mapper文件，mapper文件中配置了该mapper的命名空间（namespace），sql语句，入参出参类型
@@ -59,3 +59,9 @@ INSERT INTO `mybatis_test`.`user` (`id`, `name`, `age`, `hobbies`, `birthday`) V
 1. 对每个mapper文件写一个接口
 2. mapper文件中的一个sql对应接口中的一个方法
 3. 写接口实现类，在接口的实现类中，需要注入SqlSessionFactory，使用SqlSessionFactory的openSession方法获取sqlSession来完成每个接口方法
+
+### （3）mybatis动态代理
+
+1. 为每个mapper文件写一个同名的接口，mapper文件的命名空间写入同名接口的项目地址
+2. 同名方法的接口名为对应mapper文件sql的id
+3. 在测试方法中，获取到sqlSession后，通过其getMapper方法，传入Mapper的class，即可获取到mybatis动态代理生成的实体对象

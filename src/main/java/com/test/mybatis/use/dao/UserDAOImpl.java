@@ -1,6 +1,6 @@
-package com.test.mybatis.mybatisDAO;
+package com.test.mybatis.use.dao;
 
-import com.test.mybatis.pojo.UserDO;
+import com.test.mybatis.use.pojo.UserDO;
 import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactory;
 

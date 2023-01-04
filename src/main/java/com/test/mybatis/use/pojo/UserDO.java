@@ -1,4 +1,4 @@
-package com.test.mybatis.pojo;
+package com.test.mybatis.use.pojo;
 
 import java.util.Date;
 
