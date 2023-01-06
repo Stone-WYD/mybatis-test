@@ -70,10 +70,7 @@ INSERT INTO `mybatis_test`.`user` (`id`, `name`, `age`, `hobbies`, `birthday`) V
 
 ### （1）Mybatis整体架构
 
-![](D:\MyStudy\mybatis-test\nodePictures\Mybatis.png)
-
 ### （2）基础支持模块
 
 #### 1.解析器模块思维导图
 
-<img src="D:\MyStudy\mybatis-test\nodePictures\XPathParser .jpg" style="zoom:200%;" />

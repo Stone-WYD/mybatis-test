@@ -4,14 +4,15 @@ import com.test.mybatis.use.pojo.UserDO;
 import org.apache.ibatis.reflection.DefaultReflectorFactory;
 import org.apache.ibatis.reflection.ReflectorFactory;
 import org.apache.ibatis.reflection.TypeParameterResolver;
+import org.apache.ibatis.reflection.Reflector;
 
 import java.lang.reflect.Field;
 import java.lang.reflect.Type;
 
-public class Reflector {
+public class MyReflector {
 
     public static void main(String[] args) throws Exception {
-        org.apache.ibatis.reflection.Reflector reflector = new org.apache.ibatis.reflection.Reflector(UserDO.class);
+        Reflector reflector = new Reflector(UserDO.class);
         ReflectorFactory factory = new DefaultReflectorFactory();
 
         //测试TypeParameterResolver
