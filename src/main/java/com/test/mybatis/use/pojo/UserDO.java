@@ -1,6 +1,7 @@
 package com.test.mybatis.use.pojo;
 
 import java.util.Date;
+import java.util.List;
 
 public class UserDO {
 
@@ -9,6 +10,8 @@ public class UserDO {
     private int age;
     private String hobbies;
     private Date birthday;
+
+    private List<String> stringList;
 
     public UserDO(){}
 
@@ -59,6 +62,14 @@ public class UserDO {
 
     public void setBirthday(Date birthday) {
         this.birthday = birthday;
+    }
+
+    public List<String> getStringList() {
+        return stringList;
+    }
+
+    public void setStringList(List<String> stringList) {
+        this.stringList = stringList;
     }
 
     @Override
