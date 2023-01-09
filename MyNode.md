@@ -13,7 +13,7 @@ CREATE DATABASE mybatis_test
 ### （2）创建表：
 
 ```sql
-CREATE TABLE `mybatis_test`.`Untitled`  (
+CREATE TABLE `mybatis_test`.`user`  (
   `id` bigint NOT NULL AUTO_INCREMENT,
   `name` varchar(255) NULL,
   `age` int NULL,
