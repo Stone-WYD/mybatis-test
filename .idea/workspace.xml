@@ -5,7 +5,32 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4b515af9-0cd3-400c-b7e9-ed0e54544be3" name="更改" comment="增加一些对mybatis中反射模块测试的内容">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/test/mybatis/origin/reflection/test/reflector/ParamsConvertAssistUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/test/mybatis/origin/reflection/test/reflector/ParamsConvertUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/test/mybatis/origin/reflection/test/reflector/ParamsConvertUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/test/jdbc/TestJdbc.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/test/mybatis/origin/reflection/summary/SubClassJavaBeanWithParameter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/test/mybatis/origin/reflection/test/reflector/MyReflector.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/test/mybatis/origin/reflection/test/reflector/ParamsConvertUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/test/mybatis/origin/reflection/test/reflector/bean/param/QueryCondition.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/test/mybatis/origin/reflection/test/reflector/bean/param/XsParamCommon.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/test/mybatis/origin/reflection/test/reflector/bean/param/XsParkAreaQueryInfo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/test/mybatis/origin/reflection/test/resolveType/ClassA.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/test/mybatis/origin/reflection/test/resolveType/SubClassA.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/test/mybatis/origin/reflection/test/resolveType/TestType.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/test/mybatis/origin/xpath/TestXPath$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/test/mybatis/origin/xpath/TestXPath.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/test/mybatis/origin/xpath/parser/TestXPathParser$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/test/mybatis/origin/xpath/parser/TestXPathParser.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/test/mybatis/use/TestMybatis.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/test/mybatis/use/dao/TestMybatisDAO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/test/mybatis/use/dao/UserDAO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/test/mybatis/use/dao/UserDAOImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/test/mybatis/use/pojo/UserDO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/test/mybatis/use/proxy/TestMybatisProxy.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/test/mybatis/use/proxy/UserMapper.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,15 +59,16 @@
       </MavenGeneralSettings>
     </option>
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 0
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0
+}</component>
   <component name="ProjectId" id="2l2gmytN6WjxHnKwYFk5nupDYmQ" />
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Maven.mybatis-test [clean].executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
@@ -97,6 +123,8 @@
       <option name="presentableId" value="Default" />
       <updated>1717551937070</updated>
       <workItem from="1724383748374" duration="7432000" />
+      <workItem from="1724463329615" duration="600000" />
+      <workItem from="1724634193038" duration="13905000" />
     </task>
     <task id="LOCAL-00001" summary="增加一些对mybatis中反射模块测试的内容">
       <option name="closed" value="true" />
@@ -112,5 +140,16 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="增加一些对mybatis中反射模块测试的内容" />
     <option name="LAST_COMMIT_MESSAGE" value="增加一些对mybatis中反射模块测试的内容" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/test/mybatis/origin/reflection/test/reflector/ParamsConvertUtil.java</url>
+          <line>97</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
