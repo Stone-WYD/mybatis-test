@@ -1,4 +1,4 @@
-package com.test.mybatis.origin.reflection.test.resolveType;
+package com.test.mybatis.origin.reflection.test.resolve_type;
 
 import org.apache.ibatis.reflection.TypeParameterResolver;
 import sun.reflect.generics.reflectiveObjects.ParameterizedTypeImpl;

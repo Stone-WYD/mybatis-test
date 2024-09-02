@@ -4,33 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4b515af9-0cd3-400c-b7e9-ed0e54544be3" name="更改" comment="增加一些对mybatis中反射模块测试的内容">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/test/mybatis/origin/reflection/test/reflector/ParamsConvertAssistUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+    <list default="true" id="4b515af9-0cd3-400c-b7e9-ed0e54544be3" name="更改" comment="增加mybatis中反射工具完成参数变换的代码">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/test/mybatis/origin/reflection/test/reflector/bean/BeanWithNest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/test/mybatis/origin/reflection/test/reflector/bean/Nest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/test/mybatis/origin/reflection/test/reflector/metaclass/Test.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/test/mybatis/origin/reflection/test/reflector/ParamsConvertUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/test/mybatis/origin/reflection/test/reflector/ParamsConvertUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/test/jdbc/TestJdbc.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/test/mybatis/origin/reflection/summary/SubClassJavaBeanWithParameter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/test/mybatis/origin/reflection/test/reflector/MyReflector.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/test/mybatis/origin/reflection/test/reflector/ParamsConvertUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/test/mybatis/origin/reflection/test/reflector/bean/param/QueryCondition.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/test/mybatis/origin/reflection/test/reflector/bean/param/XsParamCommon.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/test/mybatis/origin/reflection/test/reflector/bean/param/XsParkAreaQueryInfo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/test/mybatis/origin/reflection/test/resolveType/ClassA.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/test/mybatis/origin/reflection/test/resolveType/SubClassA.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/test/mybatis/origin/reflection/test/resolveType/TestType.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/test/mybatis/origin/xpath/TestXPath$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/test/mybatis/origin/xpath/TestXPath.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/test/mybatis/origin/xpath/parser/TestXPathParser$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/test/mybatis/origin/xpath/parser/TestXPathParser.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/test/mybatis/use/TestMybatis.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/test/mybatis/use/dao/TestMybatisDAO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/test/mybatis/use/dao/UserDAO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/test/mybatis/use/dao/UserDAOImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/test/mybatis/use/pojo/UserDO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/test/mybatis/use/proxy/TestMybatisProxy.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/test/mybatis/use/proxy/UserMapper.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,26 +45,38 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Maven.mybatis-test [clean].executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/Admin/Desktop/wyd/MyProject/mybatis-test/src/main/java/com/test/mybatis/origin/reflection/test/reflector/bean",
-    "settings.editor.selected.configurable": "MavenSettings",
-    "应用程序.ParamsConvertUtil.executor": "Run",
-    "应用程序.TestType.executor": "Debug"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Maven.mybatis-test [clean].executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Admin/.m2/repository/org/mybatis/mybatis/3.4.4/mybatis-3.4.4.jar&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;MavenSettings&quot;,
+    &quot;应用程序.MyReflector.executor&quot;: &quot;Debug&quot;,
+    &quot;应用程序.ParamsConvertUtil.executor&quot;: &quot;Run&quot;,
+    &quot;应用程序.Test.executor&quot;: &quot;Run&quot;,
+    &quot;应用程序.TestType.executor&quot;: &quot;Debug&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Admin\Desktop\wyd\MyProject\mybatis-test\src\main\java\com\test\mybatis\origin\reflection\test\reflector\bean" />
       <recent name="C:\Users\Admin\Desktop\wyd\MyProject\mybatis-test\src\main\java\com\test\mybatis\origin\reflection\test\reflector" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.test.mybatis.origin.reflection.test.reflector" />
+    </key>
   </component>
-  <component name="RunManager" selected="应用程序.ParamsConvertUtil">
+  <component name="RunManager" selected="应用程序.Test">
+    <configuration name="MyReflector" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.test.mybatis.origin.reflection.test.reflector.MyReflector" />
+      <module name="mybatis-test" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ParamsConvertUtil" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.test.mybatis.origin.reflection.test.reflector.ParamsConvertUtil" />
       <module name="mybatis-test" />
@@ -93,8 +84,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.test.mybatis.origin.reflection.test.reflector.metaclass.Test" />
+      <module name="mybatis-test" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="TestType" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.test.mybatis.origin.reflection.test.resolveType.TestType" />
+      <option name="MAIN_CLASS_NAME" value="com.test.mybatis.origin.reflection.test.resolve_type.TestType" />
       <module name="mybatis-test" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -102,6 +100,8 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="应用程序.Test" />
+        <item itemvalue="应用程序.MyReflector" />
         <item itemvalue="应用程序.ParamsConvertUtil" />
         <item itemvalue="应用程序.TestType" />
       </list>
@@ -124,7 +124,12 @@
       <updated>1717551937070</updated>
       <workItem from="1724383748374" duration="7432000" />
       <workItem from="1724463329615" duration="600000" />
-      <workItem from="1724634193038" duration="13905000" />
+      <workItem from="1724634193038" duration="14707000" />
+      <workItem from="1724719723921" duration="1208000" />
+      <workItem from="1724806723567" duration="8063000" />
+      <workItem from="1724897056586" duration="605000" />
+      <workItem from="1724979905718" duration="10847000" />
+      <workItem from="1725239113122" duration="565000" />
     </task>
     <task id="LOCAL-00001" summary="增加一些对mybatis中反射模块测试的内容">
       <option name="closed" value="true" />
@@ -134,20 +139,29 @@
       <option name="project" value="LOCAL" />
       <updated>1724405245609</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="增加mybatis中反射工具完成参数变换的代码">
+      <option name="closed" value="true" />
+      <created>1724657434321</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1724657434321</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="增加一些对mybatis中反射模块测试的内容" />
-    <option name="LAST_COMMIT_MESSAGE" value="增加一些对mybatis中反射模块测试的内容" />
+    <MESSAGE value="增加mybatis中反射工具完成参数变换的代码" />
+    <option name="LAST_COMMIT_MESSAGE" value="增加mybatis中反射工具完成参数变换的代码" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/test/mybatis/origin/reflection/test/reflector/ParamsConvertUtil.java</url>
-          <line>97</line>
-          <option name="timeStamp" value="9" />
+          <url>jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis/3.4.4/mybatis-3.4.4.jar!/org/apache/ibatis/reflection/MetaClass.class</url>
+          <line>162</line>
+          <option name="timeStamp" value="10" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

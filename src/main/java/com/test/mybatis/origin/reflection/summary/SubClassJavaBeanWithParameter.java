@@ -1,11 +1,10 @@
 package com.test.mybatis.origin.reflection.summary;
 
-import com.test.mybatis.origin.reflection.test.resolveType.ClassA;
-import com.test.mybatis.origin.reflection.test.resolveType.SubClassA;
+import com.test.mybatis.origin.reflection.test.resolve_type.ClassA;
+import com.test.mybatis.origin.reflection.test.resolve_type.SubClassA;
 import org.apache.ibatis.reflection.Reflector;
 import org.apache.ibatis.reflection.invoker.Invoker;
 
-import java.lang.reflect.InvocationTargetException;
 import java.util.HashMap;
 import java.util.Map;
 
