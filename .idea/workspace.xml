@@ -4,12 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4b515af9-0cd3-400c-b7e9-ed0e54544be3" name="更改" comment="增加mybatis中反射工具完成参数变换的代码">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/test/mybatis/origin/reflection/test/reflector/bean/BeanWithNest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/test/mybatis/origin/reflection/test/reflector/bean/Nest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/test/mybatis/origin/reflection/test/reflector/metaclass/Test.java" afterDir="false" />
+    <list default="true" id="4b515af9-0cd3-400c-b7e9-ed0e54544be3" name="更改" comment="规范命名，反射相关内容">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/test/mybatis/origin/reflection/test/class_loader/ResolverUtilTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/test/mybatis/origin/reflection/test/reflector/ParamsConvertUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/test/mybatis/origin/reflection/test/reflector/ParamsConvertUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/test/mybatis/use/proxy/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/test/mybatis/use/proxy/UserMapper.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,9 +52,13 @@
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
     &quot;last_opened_file_path&quot;: &quot;C:/Users/Admin/.m2/repository/org/mybatis/mybatis/3.4.4/mybatis-3.4.4.jar&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;MavenSettings&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Facet&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.1061008&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;File.Encoding&quot;,
     &quot;应用程序.MyReflector.executor&quot;: &quot;Debug&quot;,
     &quot;应用程序.ParamsConvertUtil.executor&quot;: &quot;Run&quot;,
+    &quot;应用程序.ResolverUtilTest.executor&quot;: &quot;Debug&quot;,
     &quot;应用程序.Test.executor&quot;: &quot;Run&quot;,
     &quot;应用程序.TestType.executor&quot;: &quot;Debug&quot;
   }
@@ -69,7 +72,7 @@
       <recent name="com.test.mybatis.origin.reflection.test.reflector" />
     </key>
   </component>
-  <component name="RunManager" selected="应用程序.Test">
+  <component name="RunManager" selected="应用程序.ResolverUtilTest">
     <configuration name="MyReflector" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.test.mybatis.origin.reflection.test.reflector.MyReflector" />
       <module name="mybatis-test" />
@@ -79,6 +82,13 @@
     </configuration>
     <configuration name="ParamsConvertUtil" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.test.mybatis.origin.reflection.test.reflector.ParamsConvertUtil" />
+      <module name="mybatis-test" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ResolverUtilTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.test.mybatis.origin.reflection.test.class_loader.ResolverUtilTest" />
       <module name="mybatis-test" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -100,6 +110,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="应用程序.ResolverUtilTest" />
         <item itemvalue="应用程序.Test" />
         <item itemvalue="应用程序.MyReflector" />
         <item itemvalue="应用程序.ParamsConvertUtil" />
@@ -129,7 +140,12 @@
       <workItem from="1724806723567" duration="8063000" />
       <workItem from="1724897056586" duration="605000" />
       <workItem from="1724979905718" duration="10847000" />
-      <workItem from="1725239113122" duration="565000" />
+      <workItem from="1725239113122" duration="1640000" />
+      <workItem from="1725240766006" duration="10198000" />
+      <workItem from="1725325096661" duration="11636000" />
+      <workItem from="1725410667938" duration="5016000" />
+      <workItem from="1725497893435" duration="2095000" />
+      <workItem from="1725501430813" duration="10080000" />
     </task>
     <task id="LOCAL-00001" summary="增加一些对mybatis中反射模块测试的内容">
       <option name="closed" value="true" />
@@ -147,23 +163,28 @@
       <option name="project" value="LOCAL" />
       <updated>1724657434321</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="规范命名，反射相关内容">
+      <option name="closed" value="true" />
+      <created>1725239959081</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1725239959081</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="增加一些对mybatis中反射模块测试的内容" />
     <MESSAGE value="增加mybatis中反射工具完成参数变换的代码" />
-    <option name="LAST_COMMIT_MESSAGE" value="增加mybatis中反射工具完成参数变换的代码" />
+    <MESSAGE value="规范命名，反射相关内容" />
+    <option name="LAST_COMMIT_MESSAGE" value="规范命名，反射相关内容" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis/3.4.4/mybatis-3.4.4.jar!/org/apache/ibatis/reflection/MetaClass.class</url>
-          <line>162</line>
-          <option name="timeStamp" value="10" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <pin-to-top-manager>
+      <pinned-members>
+        <PinnedItemInfo parentTag="java.lang.String" memberName="value" />
+      </pinned-members>
+    </pin-to-top-manager>
   </component>
 </project>
