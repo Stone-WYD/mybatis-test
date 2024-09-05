@@ -20,7 +20,7 @@
         <author>Neal Stephenson</author>
         <publisher>Spectra</publisher>
         <isbn>0553380958</isbn>
-        <price>7.50</price>
+        <price>${price}</price>
     </book>
     <!-- more books... -->
 </inventory>

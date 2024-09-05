@@ -29,10 +29,10 @@ public class TestXPathParser {
         //evalString
         System.out.println("-------------------------------------");
         Properties properties = new Properties();
-        properties.setProperty("mapper1","sqlmap/User.xml");
-        properties.setProperty("mapper2","sqlmap/User.xml");
+        properties.setProperty("mapper1","sqlmap/User1.xml");
+        properties.setProperty("mapper2","sqlmap/User2.xml");
         xPathParser.setVariables(properties);
-        //String s = xPathParser.evalString("//mappers/mapper[@resource='sqlmap/User.xml']/@resource");
+        // String s = xPathParser.evalString("//mappers/mapper[@resource='sqlmap/User.xml']/@resource");
         String s = xPathParser.evalString("//mappers/mapper/@resource");
         System.out.println(s);
         //其中会有处理${}占位符的操作：PropertyParser.parse()

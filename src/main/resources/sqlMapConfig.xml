@@ -20,9 +20,9 @@
     </environments>
 
     <mappers>
-        <mapper resource="sqlmap/User.xml"/>
-        <mapper resource="sqlmap/UserMapper.xml"/>
-<!--        <mapper resource="${mapper1}"/>
-        <mapper resource="${mapper2}"/>-->
+        <!--<mapper resource="sqlmap/User.xml"/>
+        <mapper resource="sqlmap/UserMapper.xml"/>-->
+        <mapper resource="${mapper1}"/>
+        <mapper resource="${mapper2}"/>
     </mappers>
 </configuration>
