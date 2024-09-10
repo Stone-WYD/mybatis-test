@@ -9,7 +9,16 @@ import java.lang.reflect.Type;
 
 public class TestType {
 
-    SubClassA<Long> sa = new SubClassA<>();
+    private SubClassA<String> sa;
+
+    @Override
+    public String toString() {
+        if (sa != null) return sa.toString();
+        return "sa 没有内容！";
+    }
+
+    public TestType() {
+    }
 
     public static void main(String[] args) throws Exception{
         //获取ClassA中的map成员变量的field

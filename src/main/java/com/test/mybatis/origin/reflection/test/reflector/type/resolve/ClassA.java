@@ -13,4 +13,9 @@ public class ClassA<K,V> {
     public void setMap(Map<K, V> map) {
         this.map = map;
     }
+
+    @Override
+    public String toString() {
+        return map.toString();
+    }
 }
