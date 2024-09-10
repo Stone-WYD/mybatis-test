@@ -1,4 +1,4 @@
-package com.test.mybatis.origin.reflection.test.reflector;
+package com.test.mybatis.origin.reflection.test.reflector.use;
 
 import cn.hutool.core.lang.UUID;
 import cn.hutool.crypto.SecureUtil;
@@ -20,7 +20,7 @@ import java.util.Arrays;
 import java.util.Collection;
 import java.util.Collections;
 
-import static com.test.mybatis.origin.reflection.test.reflector.ParamsConvertAssistUtil.isPrimitiveOrWrapper;
+import static com.test.mybatis.origin.reflection.test.reflector.use.ParamsConvertAssistUtil.isPrimitiveOrWrapper;
 
 
 /**

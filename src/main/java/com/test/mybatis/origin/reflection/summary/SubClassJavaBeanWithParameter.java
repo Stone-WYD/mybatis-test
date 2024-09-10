@@ -1,7 +1,7 @@
 package com.test.mybatis.origin.reflection.summary;
 
-import com.test.mybatis.origin.reflection.test.resolve_type.ClassA;
-import com.test.mybatis.origin.reflection.test.resolve_type.SubClassA;
+import com.test.mybatis.origin.reflection.test.reflector.type.resolve.ClassA;
+import com.test.mybatis.origin.reflection.test.reflector.type.resolve.SubClassA;
 import org.apache.ibatis.reflection.Reflector;
 import org.apache.ibatis.reflection.invoker.Invoker;
 
