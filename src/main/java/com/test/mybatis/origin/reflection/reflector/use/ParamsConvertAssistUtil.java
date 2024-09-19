@@ -1,4 +1,4 @@
-package com.test.mybatis.origin.reflection.test.reflector.use;
+package com.test.mybatis.origin.reflection.reflector.use;
 
 import java.util.HashMap;
 import java.util.Map;

@@ -1,4 +1,4 @@
-package com.test.mybatis.origin.reflection.test.reflector.type.resolve;
+package com.test.mybatis.origin.reflection.reflector.type.resolve;
 
 import java.util.Map;
 

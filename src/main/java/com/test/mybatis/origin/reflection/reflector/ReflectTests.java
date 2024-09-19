@@ -1,18 +1,16 @@
-package com.test.mybatis.origin.reflection.test.reflector;
+package com.test.mybatis.origin.reflection.reflector;
 
-import com.test.mybatis.origin.reflection.test.reflector.type.resolve.ClassA;
-import com.test.mybatis.origin.reflection.test.reflector.type.resolve.SubClassA;
-import com.test.mybatis.origin.reflection.test.reflector.type.resolve.TestType;
+import com.test.mybatis.origin.reflection.reflector.type.resolve.ClassA;
+import com.test.mybatis.origin.reflection.reflector.type.resolve.SubClassA;
+import com.test.mybatis.origin.reflection.reflector.type.resolve.TestType;
 import com.test.mybatis.use.pojo.UserDO;
 import org.apache.ibatis.reflection.TypeParameterResolver;
-import sun.reflect.generics.reflectiveObjects.ParameterizedTypeImpl;
 
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;
 import java.lang.reflect.ParameterizedType;
 import java.lang.reflect.Type;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 
 /**

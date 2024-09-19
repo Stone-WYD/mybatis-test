@@ -1,5 +1,5 @@
 
-package com.test.mybatis.origin.reflection.test.reflector.bean.param;
+package com.test.mybatis.origin.reflection.reflector.bean.param;
 
 import com.google.gson.annotations.SerializedName;
 

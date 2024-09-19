@@ -1,8 +1,6 @@
-package com.test.mybatis.origin.reflection.test.reflector.metaclass;
+package com.test.mybatis.origin.reflection.reflector.metaclass;
 
-import com.test.mybatis.origin.reflection.test.reflector.bean.BeanWithNest;
-import com.test.mybatis.origin.reflection.test.reflector.bean.param.QueryCondition;
-import com.test.mybatis.origin.reflection.test.reflector.bean.param.XsParamCommon;
+import com.test.mybatis.origin.reflection.reflector.bean.BeanWithNest;
 import org.apache.ibatis.reflection.DefaultReflectorFactory;
 import org.apache.ibatis.reflection.MetaClass;
 

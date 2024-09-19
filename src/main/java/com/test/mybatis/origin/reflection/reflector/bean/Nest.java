@@ -1,4 +1,4 @@
-package com.test.mybatis.origin.reflection.test.reflector.bean;
+package com.test.mybatis.origin.reflection.reflector.bean;
 
 import lombok.Data;
 

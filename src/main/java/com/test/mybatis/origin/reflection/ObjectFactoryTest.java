@@ -1,4 +1,4 @@
-package com.test.mybatis.origin.reflection.test.reflector;
+package com.test.mybatis.origin.reflection;
 
 import org.apache.ibatis.reflection.factory.DefaultObjectFactory;
 import org.apache.ibatis.reflection.factory.ObjectFactory;

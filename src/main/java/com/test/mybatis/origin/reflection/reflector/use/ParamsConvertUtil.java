@@ -1,4 +1,4 @@
-package com.test.mybatis.origin.reflection.test.reflector.use;
+package com.test.mybatis.origin.reflection.reflector.use;
 
 import cn.hutool.core.lang.UUID;
 import cn.hutool.crypto.SecureUtil;
@@ -6,9 +6,9 @@ import cn.hutool.crypto.digest.HMac;
 import cn.hutool.crypto.digest.HmacAlgorithm;
 import com.google.gson.Gson;
 
-import com.test.mybatis.origin.reflection.test.reflector.bean.param.QueryCondition;
-import com.test.mybatis.origin.reflection.test.reflector.bean.param.XsParamCommon;
-import com.test.mybatis.origin.reflection.test.reflector.bean.param.XsParkAreaQueryInfo;
+import com.test.mybatis.origin.reflection.reflector.bean.param.QueryCondition;
+import com.test.mybatis.origin.reflection.reflector.bean.param.XsParamCommon;
+import com.test.mybatis.origin.reflection.reflector.bean.param.XsParkAreaQueryInfo;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.ibatis.reflection.DefaultReflectorFactory;
 import org.apache.ibatis.reflection.MetaClass;
@@ -20,7 +20,7 @@ import java.util.Arrays;
 import java.util.Collection;
 import java.util.Collections;
 
-import static com.test.mybatis.origin.reflection.test.reflector.use.ParamsConvertAssistUtil.isPrimitiveOrWrapper;
+import static com.test.mybatis.origin.reflection.reflector.use.ParamsConvertAssistUtil.isPrimitiveOrWrapper;
 
 
 /**

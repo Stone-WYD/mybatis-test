@@ -1,7 +1,6 @@
-package com.test.mybatis.origin.reflection.test.class_loader;
+package com.test.mybatis.origin.reflection.class_loader;
 
 import org.apache.ibatis.annotations.Mapper;
-import org.apache.ibatis.binding.MapperRegistry;
 import org.apache.ibatis.io.ResolverUtil;
 
 /**
