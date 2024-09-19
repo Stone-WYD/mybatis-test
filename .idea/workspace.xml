@@ -4,13 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4b515af9-0cd3-400c-b7e9-ed0e54544be3" name="更改" comment="调整代码位置">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/test/mybatis/origin/reflection/test/reflector/ReflectTests.java" afterDir="false" />
+    <list default="true" id="4b515af9-0cd3-400c-b7e9-ed0e54544be3" name="更改" comment="加入 MyBatis 中 TypeParameterResolver 功能使用场景分析的代码">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/test/mybatis/origin/reflection/test/reflector/ObjectFactoryTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/test/mybatis/origin/reflection/test/reflector/PropertyTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/test/mybatis/origin/reflection/test/reflector/MyReflector.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/test/mybatis/origin/reflection/test/reflector/type/resolve/ClassA.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/test/mybatis/origin/reflection/test/reflector/type/resolve/ClassA.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/test/mybatis/origin/reflection/test/reflector/type/resolve/TestType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/test/mybatis/origin/reflection/test/reflector/type/resolve/TestType.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,29 +43,31 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Maven.mybatis-test [clean].executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/Admin/.m2/repository/org/mybatis/mybatis/3.4.4/mybatis-3.4.4.jar",
-    "project.structure.last.edited": "Facet",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.1061008",
-    "settings.editor.selected.configurable": "File.Encoding",
-    "应用程序.MyReflector.executor": "Run",
-    "应用程序.ParamsConvertUtil.executor": "Run",
-    "应用程序.ReflectTests.executor": "Run",
-    "应用程序.ResolverUtilTest.executor": "Debug",
-    "应用程序.Test.executor": "Run",
-    "应用程序.TestType.executor": "Debug",
-    "应用程序.TestXPath2.executor": "Run",
-    "应用程序.TestXPathParser.executor": "Debug"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Maven.mybatis-test [clean].executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Admin/.m2/repository/org/mybatis/mybatis/3.4.4/mybatis-3.4.4.jar&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Facet&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.1061008&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;File.Encoding&quot;,
+    &quot;应用程序.MyReflector.executor&quot;: &quot;Run&quot;,
+    &quot;应用程序.ObjectFactoryTest.executor&quot;: &quot;Run&quot;,
+    &quot;应用程序.ParamsConvertUtil.executor&quot;: &quot;Run&quot;,
+    &quot;应用程序.PropertyTest.executor&quot;: &quot;Run&quot;,
+    &quot;应用程序.ReflectTests.executor&quot;: &quot;Run&quot;,
+    &quot;应用程序.ResolverUtilTest.executor&quot;: &quot;Debug&quot;,
+    &quot;应用程序.Test.executor&quot;: &quot;Run&quot;,
+    &quot;应用程序.TestType.executor&quot;: &quot;Debug&quot;,
+    &quot;应用程序.TestXPath2.executor&quot;: &quot;Run&quot;,
+    &quot;应用程序.TestXPathParser.executor&quot;: &quot;Debug&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Admin\Desktop\wyd\MyProject\mybatis-test\src\main\java\com\test\mybatis\origin\reflection\test\reflector\bean" />
@@ -78,23 +77,23 @@
       <recent name="com.test.mybatis.origin.reflection.test.reflector" />
     </key>
   </component>
-  <component name="RunManager" selected="应用程序.ReflectTests">
+  <component name="RunManager" selected="应用程序.PropertyTest">
+    <configuration name="ObjectFactoryTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.test.mybatis.origin.reflection.test.reflector.ObjectFactoryTest" />
+      <module name="mybatis-test" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PropertyTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.test.mybatis.origin.reflection.test.reflector.PropertyTest" />
+      <module name="mybatis-test" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ReflectTests" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.test.mybatis.origin.reflection.test.reflector.ReflectTests" />
-      <module name="mybatis-test" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ResolverUtilTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.test.mybatis.origin.reflection.test.class_loader.ResolverUtilTest" />
-      <module name="mybatis-test" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.test.mybatis.origin.reflection.test.reflector.metaclass.Test" />
       <module name="mybatis-test" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -116,11 +115,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="应用程序.PropertyTest" />
+        <item itemvalue="应用程序.ObjectFactoryTest" />
         <item itemvalue="应用程序.ReflectTests" />
         <item itemvalue="应用程序.TestXPath2" />
         <item itemvalue="应用程序.TestXPathParser" />
-        <item itemvalue="应用程序.ResolverUtilTest" />
-        <item itemvalue="应用程序.Test" />
       </list>
     </recent_temporary>
   </component>
@@ -153,7 +152,12 @@
       <workItem from="1725497893435" duration="2095000" />
       <workItem from="1725501430813" duration="14824000" />
       <workItem from="1725849314350" duration="1222000" />
-      <workItem from="1725929201787" duration="11991000" />
+      <workItem from="1725929201787" duration="13198000" />
+      <workItem from="1726018246216" duration="2438000" />
+      <workItem from="1726102988152" duration="599000" />
+      <workItem from="1726190632070" duration="599000" />
+      <workItem from="1726639371071" duration="4494000" />
+      <workItem from="1726708216014" duration="3596000" />
     </task>
     <task id="LOCAL-00001" summary="增加一些对mybatis中反射模块测试的内容">
       <option name="closed" value="true" />
@@ -203,7 +207,15 @@
       <option name="project" value="LOCAL" />
       <updated>1725935880460</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="加入 MyBatis 中 TypeParameterResolver 功能使用场景分析的代码">
+      <option name="closed" value="true" />
+      <created>1725954325470</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1725954325470</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -236,7 +248,8 @@
     <MESSAGE value="Resolver 包内容查找" />
     <MESSAGE value="补充一些 XPathParser 的使用代码" />
     <MESSAGE value="调整代码位置" />
-    <option name="LAST_COMMIT_MESSAGE" value="调整代码位置" />
+    <MESSAGE value="加入 MyBatis 中 TypeParameterResolver 功能使用场景分析的代码" />
+    <option name="LAST_COMMIT_MESSAGE" value="加入 MyBatis 中 TypeParameterResolver 功能使用场景分析的代码" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
