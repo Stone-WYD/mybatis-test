@@ -28,10 +28,10 @@ public class PropertyTest {
 
         // PropertyCopier 用法展示
         System.out.println("===========PropertyCopier 用法展示==========");
-        User user1 = new User("", 0);
-        User user2 = new User("wyd", 11);
-        PropertyCopier.copyBeanProperties(User.class, user2, user1);
-        System.out.println(user1);
+        Bean bean1 = new Bean("", 0);
+        Bean bean2 = new Bean("wyd", 11);
+        PropertyCopier.copyBeanProperties(Bean.class, bean2, bean1);
+        System.out.println(bean1);
     }
 
     private static void printContent(PropertyTokenizer token) {
@@ -39,26 +39,6 @@ public class PropertyTest {
         System.out.println("index: " + token.getIndex());
         System.out.println("indexedName: " + token.getIndexedName());
         System.out.println("children: " + token.getChildren());
-    }
-
-    private static class User {
-
-        private String name;
-
-        private Integer age;
-
-        public User(String name, Integer age) {
-            this.name = name;
-            this.age = age;
-        }
-
-        @Override
-        public String toString() {
-            return "User{" +
-                    "name='" + name + '\'' +
-                    ", age=" + age +
-                    '}';
-        }
     }
 
 }

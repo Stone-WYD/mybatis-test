@@ -13,7 +13,7 @@ CREATE DATABASE mybatis_test
 ### （2）创建表：
 
 ```sql
-CREATE TABLE `mybatis_test`.`user`  (
+CREATE TABLE `mybatis_test`.`bean`  (
   `id` bigint NOT NULL AUTO_INCREMENT,
   `name` varchar(255) NULL,
   `age` int NULL,
@@ -26,9 +26,9 @@ CREATE TABLE `mybatis_test`.`user`  (
 ### （3）表中插入数据：
 
 ```sql
-INSERT INTO `mybatis_test`.`user` (`id`, `name`, `age`, `hobbies`, `birthday`) VALUES (1, '王玉东', 25, '篮球，电子游戏', '1997-09-21');
-INSERT INTO `mybatis_test`.`user` (`id`, `name`, `age`, `hobbies`, `birthday`) VALUES (2, '小明', 24, '足球', '1998-06-04');
-INSERT INTO `mybatis_test`.`user` (`id`, `name`, `age`, `hobbies`, `birthday`) VALUES (3, '小白', 22, '网球', '2000-02-04');
+INSERT INTO `mybatis_test`.`bean` (`id`, `name`, `age`, `hobbies`, `birthday`) VALUES (1, '王玉东', 25, '篮球，电子游戏', '1997-09-21');
+INSERT INTO `mybatis_test`.`bean` (`id`, `name`, `age`, `hobbies`, `birthday`) VALUES (2, '小明', 24, '足球', '1998-06-04');
+INSERT INTO `mybatis_test`.`bean` (`id`, `name`, `age`, `hobbies`, `birthday`) VALUES (3, '小白', 22, '网球', '2000-02-04');
 ```
 
 ## 二、  JDBC连接数据库
